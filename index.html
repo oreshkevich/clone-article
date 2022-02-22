@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <title>Clone</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <h1 class="about-me-job">KeyBoard-Race</h1>
+
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+
+      <section class="about" id="about">
+        <div class="wrapper">
+          <h2 class="portfolio-title">Всем привет!</h2>
+          <div class="about-wrapper">
+            <div class="about-content">
+              <p class="about-text">Сегодня я хочу рассказать том, как наша команда разрабатывала приложение, для
+                обучения слепому
+                методу печати в игровой форме, на TypeScript, с какими сложностями мы столкнулись и что в итоге
+                получилось.</p>
+              <h2 class="portfolio-title">Наша команда, и немножко о нас!</h2>
+              <p class="about-text">Денис, Гена и Александер.</p>
+              <p class="about-text">Денис окончил Белорусский государственный технический университет. О школе узнал ...
+              </p>
+              <p class="about-text">Гена окончил Белорусский государственный технологический университет в Минске по
+                специальности
+                инженер лесного хозяйства. О школе узнал случайно. В одной из статей в интернете.</p>
+              <p class="about-text">Александр студент Витебского государственного медицинского университета. О школе
+                узнал ...</p>
+              <p class="about-text">За время обучения в школе мы сделали</p>
+              <ol class="about-text">
+                <li>Museum -- был очень интересный проект в нем мы реализовали фиксированную верстку сайта по макету
+                  Figma, адаптивную верстку, добавили JS. С помощью JavaScript сделали два слайдера, кастомный
+                  видеоплеер, слайдер сравнения изображений, калькулятор продажи билетов, интерактивную карту.</li>
+                <li>Momentum - аналог одноименного приложения интернет-магазина Chrome. Приложение показывает время
+                  и имя пользователя. Фоновое изображение и приветствие меняются в зависимости от времени суток.
+                  Ключевые навыки которые мы приобрели: методы поиска элементов, вывод данных на страницу, работа с
+                  датой и временем, работа с аудио, сохранение данных в localstorage, использование рекурсивного
+                  setTimeout, деление js-кода на модули, работа с асинхронными запросами.</li>
+                <li>ArtQuiz - приложение-викторина на знание шедевров живописи и их авторов. Ключевые навыки которые
+                  мы приобрели: OOP, JavaScript Classes, Modules in JavaScript, Webpack, CSS3 Animations</li>
+                <li>Christmas-tree. Ключевые навыки которые мы приобрели: TypeScript, Modules in JavaScript,
+                  Webpack, сортировка данных, фильтрация данных, реализация поиска, реализация "drag and drop"</li>
+              </ol>
+              <h4 class="portfolio-title">Описание проекта</h4>
+              <p class="about-text">Clone — финальное задание курса Frontend-разработки в Rolling Scopes School 2021.
+                В рамках этого задания студентам нужно было выбрать клон игры или приложения и сделать свой
+                максимально похожий вариант, используя инструменты веб-разработки.
+                Это задание показалось всем нам достаточно интересным, поскольку ни у кого из нас не было опыта в
+                командной разработке приложений, и это была отличная возможность попробовать реализовать себя в
+                команде.</p>
+              <h4 class="portfolio-title">Организация командной работы</h4>
+              <p class="about-text">В начале первой недели мы созвонились, чтобы решить следующие вопросы: что мы хотим
+                получить в
+                результате разработки, какие задачи для этого нужно выполнить, как организовать нашу работу. Для
+                этого в Trello создали общую доску, где отметили примерный план работы и список задач. Чтобы каждый
+                был в курсе текущих изменений.</p>
+              <h4 class="portfolio-title">Архитектура проекта, особенности реализации</h4>
+              <p class="about-text">Мы реализовали Frontend:</p>
+              <ul class="about-text">
+                <li>Возможность регистрации / игра гостем (Игровые возможности гостя урезаны). Есть группы
+                  пользователей и разные права доступа(гость, пользователь, администратор).
+                <li>Авторизацию, информацию о заездах каждого пользователя сохранять на бэке.</li>
+                <li>В приложении за опыт можно покупать машину и менять цвет</li>
+                <li></li>реализован гараж</li>
+                <li>реализован личный кабинет пользователя</li>
+                <li>Настройки (аватарка, логин, пароль) возможность редактирования</li>
+                <li>есть страница статистики</li>
+                <li>Выход.</li>
+                <li>реализована рейтинговая страница пользователей, краткая статистика по за ездам,
+                  по пользователям ведутся логи, каждый пользователь может просмотреть свой лог. Администратор может
+                  просматривать все.</li>
+                <li>у пользователя есть уровень, опыт Также есть наборы значков которые даются за определенные
+                  действия в приложении.</li>
+                <li>реализовать режим обучения:
+                  минимальное количество уроков, где описывается как печатать слепым методом. возможность добавления
+                  экранной клавиатуры, для удобства запоминания клавиш. Разные режимы клавиатуры. Подсветка клавиш,
+                  возможность включения, отключения отображения каким пальцем нажимать.</li>
+
+                <li>режим игры. Многопользовательский, доступно от 1 до 4 игроков. Реализация через websockets,
+                  отображение положениея автомобилей в реальном времени у всех игроков.
+                  положение машин на трассе определяется в зависимости от скорости и правильности набранного текста
+                  участника гонки. Кто правильнее и быстрее набирает текст, тот и выигрывает.
+                  есть возможность создать заезд, присоединиться к существующему, просмотра заезда без участия,
+                  создания закрытой гонки, возможность пригласить туда зарегистрированных пользователей на выбор.
+                </li>
+                <h4 class="portfolio-title">Ход разработки<h4>
+                    <p class="about-text">Денис – реализовал весь бекэнд.</p>
+                    <p class="about-text">Гена – верстка лендинга, реализация клавиатуру, гараж.</p>
+                    <p class="about-text">Александер – личный кабинет пользователя, статистика.</p>
+
+                    <h4 class="portfolio-title">Заключение</h4>
+                    <p class="about-text">
+                      За полтора месяца работы наша команда сделала для себя большой прорыв в работе в команде и
+                      разработке приложений.
+                      При разработке мы сталкивались с различными сложностями, причем многие из них были специфичны
+                      для данного приложения и требовали особого подхода. Также важной частью проекта была работа в
+                      команде. Она включала в себя распределение обязанностей, работу над совместным проектом с
+                      использование системы контроля версий, организацию созвонов и других способов взаимодействия
+                      команды.
+                      Конечно большая благодарность нашему ментору что не оставлял в трудную минуту и всегда был с
+                      нами.
+                      Надеюсь, что у нас получилось в полной мере описать процесс разработки и результаты нашей
+                      работы.
+                    </p>
+                    <h4 class="portfolio-title">Наша скромная самооценка </h4>
+                    <h2 dir="auto">UI:</h2>
+                    <ul class="contains-task-list">
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Реализован
+                        routing (без перезагрузки страницы приложения) (20 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> анимация машинок
+                        svg-анимация (10 баллов)
+                      </li>
+                    </ul>
+                    <h2 dir="auto">Технический стек:</h2>
+                    <ul class="contains-task-list">
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Использован
+                        webpack (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Сохранение и
+                        загрузка статистики не авторизированного пользователя Local storage (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Приложение
+                        написана на TypeScript (40 баллов) – TS не выдает ошибок
+                      </li>
+                    </ul>
+                    <h2 dir="auto">Работа с кодом:</h2>
+                    <ul class="contains-task-list">
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Использован
+                        eslint (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Понятный,
+                        читаемый код. Имена переменных и функций отражают то что в них содержится/то что они делают.
+                        Функция выполняет одно действие. Повторение логики сведено к минимуму. (10 баллов)
+                      </li>
+                    </ul>
+                    <h3 dir="auto">итого: 110</h3>
+                    <h2 dir="auto">Frontend:</h2>
+                    <ul class="contains-task-list">
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> реализовали
+                        возможность регистрации / игра гостем (5 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> реализован
+                        личный кабинет пользователя (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> реализован
+                        рейтинг пользователей (5 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> реализован режим
+                        обучения: (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> минимальное
+                        количество уроков, где описывается как печатать слепым методом (10 баллов)<br>
+                        есть возможность добавления экранной клавиатуры, для удобства запоминания клавиш.(10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Разные режимы
+                        клавиатуры. Подсветка клавиш, возможность включения, отключения отображения каким пальцем
+                        нажимать (5 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> положение машин
+                        на трассе определяется в зависимости от скорости и правильности набранного текста участника
+                        гонки. Кто правильнее и быстрее набирает текст, тот и выигрывает. (5 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> лог действий в
+                        личном кабинете (5 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> достижения (5
+                        баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> возможность
+                        менять машину и цвет за опыт (10 баллов)
+                      </li>
+                    </ul>
+                    <h3 dir="auto">итого: 80</h3>
+                    <h2 dir="auto">Backend</h2>
+                    <ul class="contains-task-list">
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Использован REST
+                        API (20 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Использован MVC
+                        паттерн (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Подключение и
+                        работа с БД (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Используется
+                        ORM(sequelize/mongoose) (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Регистрация (10
+                        баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Аутентификация
+                        (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Авторизация (10
+                        баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Приложение
+                        отображает какую-либо статистику/графики/таблицы, данные для которых получает от бэкенда (20
+                        баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Реализован node
+                        js и express (20 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Реализована
+                        работа с изображениями сохранение аватарок (10 баллов)
+                      </li>
+                      <li class="task-list-item enabled">
+                        <span class="handle">
+                          <svg class="drag-handle" aria-hidden="true" width="16" height="16">
+                            <path
+                              d="M10 13a1 1 0 100-2 1 1 0 000 2zm-4 0a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2zm1-5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 100-2 1 1 0 000 2z">
+                            </path>
+                          </svg>
+                        </span><input type="checkbox" id="" class="task-list-item-checkbox" checked=""> Сервер отдаёт
+                        корректные ответы, отдаёт HTTP ошибки с нормальными body, по которым можно понять, что произошло
+                        (10 баллов)
+                      </li>
+                      <h3 dir="auto">итого: 140</h3>
+                      <h3 dir="auto">Всего: 330</h3>
+                    </ul>
+
+            </div>
+            <div class="vidio">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1Yr5j59Zelk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="work">
+        <h2 class="portfolio-title">Projects</h2>
+        <div class="portfolio-cards-wrapper">
+          <div class="card">
+            <a href="https://keyboard-race.netlify.app/" target="_blank" class="card-link">
+              <img class="card-img" src="./img/1.png" alt="Willberries">
+              <h3 class="card-title">KeyBoard-Race </h3>
+              <p>КЛАВИАТУРНЫЙ ТРЕНАЖЁР </p>
+              <p>The project used: javascript (BE), typescript (FE), node.js, express, MongoDB, Scss, HTML5 </p>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+      <section class="code" id="code">
+        <div class="code-wrapper">
+          <h2 class="code-title">Code</h2>
+          <pre><code class="answer">
+            view(currentChar: string, previousChar = currentChar) {
+              const keyLayout = this.lang === 'ru' ? keyLayoutRu : keyLayoutEn;
+              const leftKey = 'Ё!"№;%ЙЦУКЕФЫВАПЯЧСМИ~!@#$%QWERTASDFGZXCVB';
+              const shiftLeft = document.querySelector(`.keyboard__key[data-key="ShiftLeft"]`) as HTMLElement;
+              const shiftRight = document.querySelector(`.keyboard__key[data-key="ShiftRight"]`) as HTMLElement;
+              const space = document.querySelector(`.keyboard__key[data-key="Space"]`) as HTMLElement;
+              const keys = Object.keys(keyLayout);
+          
+              document.querySelectorAll('.keyboard__key').forEach((el: HTMLElement) => {
+                el.classList.remove('active');
+              });
+          
+              keys.forEach((key) => {
+                const BTN_ACTIVE = document.querySelector(`.keyboard__key[data-key="${key}"]`) as HTMLElement;
+                if (currentChar === ' ') {
+                  if (leftKey.indexOf(previousChar.toUpperCase()) === -1) {
+                    space.classList.add('lhand0');
+                    space.classList.remove('rhand0');
+                  } else {
+                    space.classList.add('rhand0');
+                    space.classList.remove('lhand0');
+                  }
+                }
+                if (keyLayout[key].normal === currentChar) {
+                  BTN_ACTIVE.classList.add('active');
+                }
+                if (keyLayout[key].alt === currentChar) {
+                  BTN_ACTIVE.classList.add('active');
+                  if (leftKey.indexOf(currentChar) === -1) {
+                    shiftLeft.classList.add('active');
+                  } else {
+                    shiftRight.classList.add('active');
+                  }
+                }
+              });
+    </code></pre>
+        </div>
+      </section>
+
+
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-icons">
+
+        <a href="https://rs.school/js/">
+          <img class="logo" src="./img/rs_school_js.svg" alt="rs_school_js">
+        </a>
+        <a href="#">
+          <img src="./img/github.svg" alt="github">
+        </a>
+        <a href="https://www.youtube.com/watch?v=1Yr5j59Zelk">
+          <img class="logo1" src="./img/youtube.svg" alt="YouTube">
+        </a>
+
+
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
